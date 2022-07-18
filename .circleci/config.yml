@@ -37,7 +37,7 @@ jobs:
       - run:
           name: Build multiarch docker image and push
           command: |
-            DOCKER_CLI_EXPERIMENTAL=enabled docker buildx build --platform linux/arm64,linux/amd64 --push -t namiops/multiarch-netcat .
+            DOCKER_CLI_EXPERIMENTAL=enabled docker buildx build --platform linux/arm64,linux/amd64 --push -t billyk/cc .
 workflows:
   build-and-deploy:
     jobs:
